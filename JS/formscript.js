@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function(){
 document.getElementById("resetButton").addEventListener("click", function(){
     document.getElementById("firstNameError").innerHTML = "";
     document.getElementById("lastNameError").innerHTML = "";
-    document.getElementById("facilitatorError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
     console.log("Reset button clicked");
 });
 
@@ -15,10 +15,10 @@ document.getElementById("resetButton").addEventListener("click", function(){
 window.addEventListener("load", function(){
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
-    document.getElementById("facilitator").value = "";
+    document.getElementById("email").value = "";
     document.getElementById("firstName").style = "border: 1px solid black";
     document.getElementById("lastName").style = "border: 1px solid black";
-    document.getElementById("facilitator").style = "border: 1px solid black";
+    document.getElementById("email").style = "border: 1px solid black";
     document.getElementById("other").checked=true;
     document.getElementById("football").checked=false;
     document.getElementById("basketball").checked=false;
@@ -95,23 +95,35 @@ function validateForm() {
     }
 
    
-    //declare variables for facilitator
-    let facilitator = document.querySelector("#facilitator").value;
-    let facilitatorError = document.querySelector("#facilitatorError");
-    let facilitatorValid = true;
+    //declare variables for email
+    let email = document.querySelector("#email").value;
+    let emailError = document.querySelector("#emailError");
+    let emailValid = true;
+    let valid = /[^@]+@[^@]+.[^.]/.test(email);
 
-    //validate facilitator
-    if(facilitator !== 'Jen' && facilitator !== 'Chris' && facilitator !== 'Christian' && facilitator !== 'Josh' && facilitator !== 'Behdad'){
-        isValid = false;
-        facilitatorError.innerHTML = "This is not the name of a facilitator for this class.";
-        facilitatorValid = false;
-        console.log("Error: This is not the name of a facilitator for this class.");
-        document.getElementById("facilitator").style = "border: 2px solid red";
-    }
-    else {
-        facilitatorError.innerHTML = "";
-        document.getElementById("facilitator").style = "border: 1px solid black";
-    }
-
+    //validate email
+        if (!valid) {
+            isValid = false;
+            emailError.innerHTML = "This is not a valid email address.";
+            emailValid = false;
+            console.log("Error: This is not a valid email address.");
+            document.getElementById("email").style = "border: 2px solid red";
+        }
+    // if(email !== 'Jen' && email !== 'Chris' && email !== 'Christian' && email !== 'Josh' && email !== 'Behdad'){
+    //     isValid = false;
+    //     emailError.innerHTML = "This is not a valid email address.";
+    //     emailValid = false;
+    //     console.log("Error: This is not a valid email address.");
+    //     document.getElementById("email").style = "border: 2px solid red";
+    // }
+        else {
+            emailError.innerHTML = "";
+            document.getElementById("email").style = "border: 1px solid black";
+        }
+        
+        if(isValid === true){
+            alert("Thanks for reaching out!");
+        }
     return isValid;
+   
 }

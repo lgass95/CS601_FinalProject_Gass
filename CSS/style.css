@@ -18,6 +18,11 @@
 
         }
 
+        button {
+            margin:.5rem;
+            font-size: 1rem;
+        }
+
     /*|| Text*/
 
         h1 {
@@ -168,11 +173,7 @@
         width: auto;
     }
    
-
-/*|| About*/
-    #headshot {
-        border-radius: 50%;
-    }
+/*|| Experience*/
     caption {
         font-weight: bold;
         font-size: 1vw;
@@ -199,6 +200,17 @@
         font-size: 1vw;
     }
 
+    .resume {
+        text-align:center;
+        margin: 2rem;
+    }
+
+/*|| About*/
+    #headshot {
+        border-radius: 50%;
+    }
+    
+
 /*|| Contact*/
 
 form {
@@ -209,6 +221,10 @@ form {
     overflow:scroll;
 }
 
+#textGroup{
+    text-align: right;
+
+}
 .text input {
     width:20rem;
     margin: 2px;
@@ -226,7 +242,7 @@ form {
     color:#ff0000;
 }
 
-#facilitatorError {
+#emailError {
     color:#ff0000;
 }
 .error {
@@ -242,6 +258,20 @@ form {
     justify-content: center;
 }
 
+#contactInfo {
+    display: flex;
+    justify-content:center;
+}
+
+.message label {
+    display: block;
+    margin: 1rem;
+}
+
+textarea {
+    width: 25rem;
+    height: 6rem;
+}
 /*|| Media Queries*/
 
 @media print {

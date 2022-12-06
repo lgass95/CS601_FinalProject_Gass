@@ -38,6 +38,7 @@
                 <aside></aside>
                 
                 <section>
+                    <div id="contactInfo">
                     <div class = "list">
                     <h2>How to reach me:</h2>
                     <!--I set all hyperlinks to external sites to open a new tab in the browser by using the target attribute and setting the value to "_blank"-->
@@ -46,13 +47,12 @@
                         <li> <a href = "https://www.linkedin.com/in/luke-gass-35894ab8/" target = "_blank">LinkedIn</a> </li>
                     </ul>
                     </div>
+                    </div>
                 </section>
                 <!--Article elements are here to demonstrate semantic HTML and will have content 
                     added on some pages when appropriate-->
                 <article>
                    
-                        <header>
-                        </header>
                             <form   name = "myForm" 
                                     id = "myForm"
                                     action = "https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5"
@@ -65,19 +65,19 @@
                                 <div class="formBody">
                                     <div id="textGroup">
                                         <div class="text">
-                                            <label for = "firstName">First Name</label>
+                                            <label for = "firstName">*First Name</label>
                                             <input type = "text" name = "firstName" id = "firstName" placeholder="Enter your first name" required>
                                             <div class="error" id="firstNameError"></div>
                                         </div>
                                         <div class="text">
-                                            <label for = "lastName">Last Name</label>
+                                            <label for = "lastName">*Last Name</label>
                                             <input type = "text" name = "lastName" id = "lastName" placeholder="Enter your last name" required>
                                             <div class="error" id="lastNameError"></div>
                                         </div>
                                         <div class="text">
-                                            <label for = "facilitator">Facilitator</label>
-                                            <input type = "text" name = "facilitator" id = "facilitator" placeholder="Enter your facilitator's name" required>
-                                            <div class ="error" id="facilitatorError"></div>
+                                            <label for = "email">*Email</label>
+                                            <input type = "text" name = "email" id = "email" placeholder="Enter your email" required>
+                                            <div class ="email" id="emailError"></div>
                                         </div>
                                     </div> 
                                     <div class = "radio">
@@ -96,7 +96,7 @@
                                         </div>
                                         <div id="radioError"></div>
                                     </div>
-                                    <div class="cheklist">
+                                    <div class="checklist">
                                         <p>What sports do you watch? (Check all that apply)</p>
                                         <div>
                                             <input type="checkbox" name="sport" id="football">
@@ -122,6 +122,12 @@
                                             <input type="checkbox" name="sport" id="tennis">
                                             <label for="tennis">Tennis</label>
                                         </div>
+                                    </div>
+                                    <div class="message">
+                                        <label for = "message">*Message:</label>
+                                        <textarea name = "message" id = "message" placeholder="Enter your message (150 character max.)" 
+                                        maxlength="150" required></textarea>
+                                        <div class ="message" id="messageError"></div>
                                     </div>
                                     <div class="button">
                                         <button type = "submit" id = "myButton" name = "myButton">Submit</button>
