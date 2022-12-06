@@ -49,7 +49,91 @@
                 </section>
                 <!--Article elements are here to demonstrate semantic HTML and will have content 
                     added on some pages when appropriate-->
-                <article></article>
+                <article>
+                   
+                        <header>
+                        </header>
+                            <form   name = "myForm" 
+                                    id = "myForm"
+                                    action = "https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5"
+                                    method = "post"
+                                    onsubmit = "return validateForm()">
+                                
+                                <div class="formHeader">
+                                    <h2>Contact Form</h2>
+                                </div>
+                                <div class="formBody">
+                                    <div id="textGroup">
+                                        <div class="text">
+                                            <label for = "firstName">First Name</label>
+                                            <input type = "text" name = "firstName" id = "firstName" placeholder="Enter your first name" required>
+                                            <div class="error" id="firstNameError"></div>
+                                        </div>
+                                        <div class="text">
+                                            <label for = "lastName">Last Name</label>
+                                            <input type = "text" name = "lastName" id = "lastName" placeholder="Enter your last name" required>
+                                            <div class="error" id="lastNameError"></div>
+                                        </div>
+                                        <div class="text">
+                                            <label for = "facilitator">Facilitator</label>
+                                            <input type = "text" name = "facilitator" id = "facilitator" placeholder="Enter your facilitator's name" required>
+                                            <div class ="error" id="facilitatorError"></div>
+                                        </div>
+                                    </div> 
+                                    <div class = "radio">
+                                        <p>Gender:</p>
+                                        <div>
+                                            <input type="radio" name="gender" id="male">
+                                            <label for="male">Male</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" id="female">
+                                            <label for="female">Female</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" id="other" checked>
+                                            <label for="other">Other</label>
+                                        </div>
+                                        <div id="radioError"></div>
+                                    </div>
+                                    <div class="cheklist">
+                                        <p>What sports do you watch? (Check all that apply)</p>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="football">
+                                            <label for="football">Football</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="basketball">
+                                            <label for="basketball">Basketball</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="baseball">
+                                            <label for="baseball">Baseball</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="hockey">
+                                            <label for="hockey">Hockey</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="soccer">
+                                            <label for="soccer">Soccer</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="tennis">
+                                            <label for="tennis">Tennis</label>
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <button type = "submit" id = "myButton" name = "myButton">Submit</button>
+                                    </div>
+                                    <div class="button">
+                                        <button type="reset" id="resetButton" name="resetButton">Reset</button>
+                                    </div>
+                                 </div>
+                            </form>
+                        
+                        <script src="JS/formscript.js"></script>
+                </article>
 
             </main>
             

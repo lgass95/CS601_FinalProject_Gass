@@ -201,6 +201,47 @@
 
 /*|| Contact*/
 
+form {
+    display:flex;
+    flex-direction:column;
+    align-items: center;  
+    justify-content: center;
+    overflow:scroll;
+}
+
+.text input {
+    width:20rem;
+    margin: 2px;
+}
+
+.text {
+    margin:1rem; 
+}
+
+#firstNameError {
+    color:#ff0000;
+}
+
+#lastNameError{
+    color:#ff0000;
+}
+
+#facilitatorError {
+    color:#ff0000;
+}
+.error {
+    display:block;
+}
+.radio {
+    display:block;
+    flex:1;
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+}
+
 /*|| Media Queries*/
 
 @media print {
