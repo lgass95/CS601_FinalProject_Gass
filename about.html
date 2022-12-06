@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+        Luke Gass - About
+    </title>
+    <link href = "CSS/style.css" rel = "stylesheet">
+</head>
+    <body>
+        <div class = "content">
+            <!--I included the nav bar as an element in the header so that it will appear 
+                at the top of every page-->
+            <header> 
+                <nav>
+                    <a href = "index.html">Home</a> |
+                    <span>About</span> |
+                    <a href = "experience.html">Experience</a> |
+                    <a href = "contact.html">Contact</a> |
+                    <a href = "blog.html">Blog</a> |
+                    <a href = "gallery.html">Gallery</a>
+                </nav>
+                <h1>About Me</h1>
+
+                <img id = "headshot" class = "main" src = "Images/Headshot.jpg" alt = "Headshot">
+            </header>
+            <main>
+                <!--Asside elements are here to demonstrate semantic HTML and will possibly 
+                    add content later-->
+                <aside></aside>
+                
+                <!--Bio-->
+                <section>
+                    <h2>Bio</h2>
+                    <p> I am originally from Reading, MA and spent my undergrad years studying in Washington, D.C.
+                        After graduating and spending some time working in the non-profit sector, I have returned to the Boston
+                        area to continue my studies. My main interests in web development revolve around front-end engineering
+                        with HTML and CSS as well as working with databases using languages like SQL. One of my goals is to
+                        develop a skillset that will equip me to provide website-building services to small businesses.
+                    </p>
+                    <p> When I am not studying web development, I spend my time exercising, studying personal training and 
+                        nutrition, and exploring my neighborhood on foot. One of my favorite things to do when out and about
+                        is discover new restaurants and coffee shops. I enjoy travel and have been to several parts
+                        of the United States, as well as to Turkey and England. I hope to one day take separate trips to 
+                        Japan and across Europe. 
+                    </p>
+                </section>
+                <!--Bio end-->
+
+                <section>
+                    <!--I nested the following list by making a list element that is the child
+                        of a list item element. This was determined valid.-->
+                    <div class = "list">
+                    <h2>Interests:</h2>
+                    <ul>
+                        <li>Fitness
+                         <div class = "list">
+                        <ul>
+                            <li>Weight Lifting</li>
+                            <li>Boxing</li>
+                        </ul>
+                        </div>
+                    </li>
+                        <li>Nutrition</li>
+                        <li>Photography</li>
+                        <li>Reading</li>
+                        <li>Music</li>
+                        <li>Film</li>
+                        <li>Television</li>
+                    </ul>
+                    </div>
+                    <!--Unorderd list end-->
+                </section>
+
+                <!--Article elements are here to demonstrate semantic HTML and will have content 
+                    added on some pages when appropriate-->
+                <article></article>
+            </main>
+            
+            <!--I added a break element before the footer to give it some padding from the rest 
+                of the page above.-->
+            <footer>Copyright &copy; 2022 Luke Gass. All Rights Reserved.</footer>
+        </div>
+    </body>
+
+</html>
