@@ -1,0 +1,21 @@
+{
+    "degrees":[
+        {
+            
+                "school": "American University",
+                "major": "Communications, Legal Institutions, Economics and Government (CLEG)",
+                "type": "BA",
+                "year": 2019
+            },
+       
+            {
+                    "school": "Boston University",
+                    "major": "Web Application Development",
+                    "type": "Graduate Certificate",
+                    "year": 2023
+                }
+          
+            
+        
+    ]
+}

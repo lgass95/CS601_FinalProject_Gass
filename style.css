@@ -1,0 +1,47 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: inherit;
+  background-color: snow;
+}
+
+
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+button {
+  background-color: cyan;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: monospace;
+  box-shadow: 0 0 0 .25rem magenta;
+}
+
+button_container {
+  text-align:center;
+}
+
+table {
+  text-align: center;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+td {
+  border:1px solid black;
+}
+
+th {
+  border: 1px solid black;
+}
+
