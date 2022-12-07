@@ -74,7 +74,9 @@
             margin-inline-end: 5rem;
         }
 
-
+        noscript p {
+            text-align: center;
+        }
 
     /*|| Images*/
         img.main {
@@ -172,6 +174,33 @@
         height: 20rem;
         width: auto;
     }
+
+    #photo-viewer {
+        position: relative;
+        display: block;
+        height: fit-content;
+        width:fit-content;
+        overflow: hidden;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right:auto;
+        /* display:none; */
+    }
+
+
+    #openImage {
+        height: 30rem;
+        width: auto;
+    }
+
+    a.active {
+        opacity: 0.3;
+    }
+
+    img.thumb {
+        height:5rem;
+        width:3rem;
+    }
    
 /*|| Experience*/
     caption {
@@ -213,8 +242,9 @@
 
 /*|| Contact*/
 
-form {
-    display:flex;
+
+#myForm{
+    display: none;
     flex-direction:column;
     align-items: center;  
     justify-content: center;

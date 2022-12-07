@@ -3,6 +3,8 @@ window.addEventListener("DOMContentLoaded", function(){
     console.log("DOM is ready");
 });
 
+let form =document.getElementById("myForm");
+    form.style.display = 'flex';
 //Clear error messages when 
 document.getElementById("resetButton").addEventListener("click", function(){
     document.getElementById("firstNameError").innerHTML = "";

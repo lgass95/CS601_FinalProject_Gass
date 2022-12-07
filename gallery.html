@@ -41,12 +41,33 @@
                 
                         <!--Article elements are here to demonstrate semantic HTML and will have content 
                             added on some pages when appropriate-->
+
+                    <article class="album">
+                        <div id="photo-viewer">
+                            <img id="openImage" src = "Images/Alcatraz_1.jpg" alt = "Alcatraz Island shown from a distance with a boat in the foreground.">
+                        </div>
+                        <div id="thumbnails">
+                            <p>Alcatraz:</p>
+                            <a href="Images/Alcatraz_1.jpg" class="thumb" title="Alcatraz 1">
+                                <img  class="thumb" src = "Images/Alcatraz_1.jpg" alt = "Alcatraz Island shown from a distance with a boat in the foreground." onclick="imgEnlarge(this)">
+                            </a>
+                            <a href="Images/Alcatraz_2.jpg" id ="alcatraz2" class="thumb" title="Alcatraz 2">
+                                <img class="thumb" src = "Images/Alcatraz_2.jpg" alt = "A sign that reads &quot;Alcatraz Island, National Park Service, Golden Gate National Recreation Area&quot; under a clock." onclick="imgEnlarge(this)">
+                            </a>
+                            <a href="Images/Alcatraz_3.jpg" class="thumb" title="Alcatraz 3">
+                                <img class ="thumb" src = "Images/Alcatraz_3.jpg" alt = "A row of three levels of prison cells with people standing in the hallway." onclick="imgEnlarge(this)">
+                            </a>
+                            <a href="Images/Alcatraz_4.jpg" class="thumb" title="Alcatraz 4">
+                                <img class="thumb" src = "Images/Alcatraz_4.jpg" alt = "A guard tower and an abandoned building standing on a cliff with green bushes sitting in the foreground." onclick="imgEnlarge(this)">
+                            </a>
+                        </div>
+                    </article>
                         <!--Image collection-->
-                    <!-- <noscript> -->
+                    <noscript>
                         <article class = "album">
                             <h2>Alcatraz</h2>
                             <div class = "gallery">
-                                <img class = "gallery" src = "Images/Alcatraz_1.jpg" alt = "Alcatraz island shown from a distance with a boat in the foreground.">
+                                <img class = "gallery" src = "Images/Alcatraz_1.jpg" alt = "Alcatraz Island shown from a distance with a boat in the foreground.">
                                 <img class = "gallery" src = "Images/Alcatraz_2.jpg" alt = "A sign that reads &quot;Alcatraz Island, National Park Service, Golden Gate National Recreation Area&quot; under a clock.">
                                 <img class = "gallery" src = "Images/Alcatraz_3.jpg" alt = "A row of three levels of prison cells with people standing in the hallway.">
                                 <img class = "gallery" src = "Images/Alcatraz_4.jpg" alt = "A guard tower and an abandoned building standing on a cliff with green bushes sitting in the foreground.">
@@ -54,7 +75,7 @@
                             <!--Image collection end-->
 
                         </article>
-                    <!-- </noscript> -->
+                    </noscript>
                 </section>
             </main>
             
@@ -62,5 +83,17 @@
                 of the page above.-->
             <footer>Copyright &copy; 2022 Luke Gass. All Rights Reserved.</footer>
         </div>
+        <script>
+            const img = document.getElementsByClassName('thumb');
+            for(i=0;i<img.length;i++){
+            img[i].addEventListener('click', function(e){
+                    e.preventDefault();
+                })
+        }
+
+            function imgEnlarge(imgs) {
+            let selectedImg = document.getElementById("openImage");
+            selectedImg.src = imgs.src;
+          } </script>
     </body>
 </html>
