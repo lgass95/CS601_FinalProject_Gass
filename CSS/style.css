@@ -124,6 +124,7 @@
         text-align: center;
         word-spacing: 1rem;
         font-size: 1vw;    
+        display: flexbox;
     }
 
 /*|| Blog*/
@@ -177,7 +178,7 @@
 
     #photo-viewer {
         position: relative;
-        display: block;
+        display: none;
         height: fit-content;
         width:fit-content;
         overflow: hidden;
@@ -204,7 +205,7 @@
     }
 
     #thumbnails {
-        display: inline-flexbox;
+        display: none;
         align-items:center;
         text-align: center;
         margin-left:auto;
