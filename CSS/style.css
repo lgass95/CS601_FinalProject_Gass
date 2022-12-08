@@ -124,6 +124,8 @@
         text-align: center;
         word-spacing: 1rem;
         font-size: 1vw;    
+        border: 1px solid red;
+        display: flexbox;
     }
 
 /*|| Blog*/
