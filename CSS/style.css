@@ -200,6 +200,15 @@
     img.thumb {
         height:5rem;
         width:3rem;
+        margin:.5rem;
+    }
+
+    #thumbnails {
+        display: inline-flexbox;
+        align-items:center;
+        text-align: center;
+        margin-left:auto;
+        margin-right: auto;
     }
    
 /*|| Experience*/
