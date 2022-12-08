@@ -177,7 +177,7 @@
 
     #photo-viewer {
         position: relative;
-        display: block;
+        display: none;
         height: fit-content;
         width:fit-content;
         overflow: hidden;
