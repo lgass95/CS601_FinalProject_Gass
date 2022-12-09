@@ -461,12 +461,17 @@ textarea {
     }
 
     div.gallery {
-        display: block;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto;
+        margin: auto;
     }
-    
+
     img.gallery {
-        height: 30rem;
+        height: 20rem;
         width: auto;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     div.blog {
@@ -646,7 +651,7 @@ textarea {
         text-align: center;
     }
 
-    #myForm {
+     #myForm {
         text-align: center;
     }
 }
