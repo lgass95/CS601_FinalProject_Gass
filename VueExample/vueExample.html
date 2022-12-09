@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <title>Sample Vue Application</title> 
+    </head> 
+<body> 
+    <div id="app">
+         <h1>{{ courseName }}</h1> 
+    </div>
+<!--Include Vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+<!--Create Vue instance-->
+<script>
+var app = new Vue({ 
+    el: '#app', 
+    data: { 
+        courseName: 'CS601: Web Application Development'
+    }
+})
+</script> 
+
+
+</body>
+</html>
