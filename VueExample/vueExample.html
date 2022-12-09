@@ -2,22 +2,37 @@
 <html lang="en"> 
     <head> 
         <title>Sample Vue Application</title> 
+        <link href="vueExample.css" rel="stylesheet">
     </head> 
 <body> 
+
+    
     <div id="app">
-         <h1>{{ courseName }}</h1> 
+        <img :src = 'logoSrc' alt = 'Boston University Logo'/>
+         <h1>{{ appName }}</h1> 
+         <a v-bind:href="link">View Course Details</a>
+
+         <p v-if="offeredOnline">Offered on campus and online.</p>
+         <p v-else>Offered online only.</p>
+
+         <h2>Prerequisites</h2>
+         <p>One of the following or Instructor Consent:</p>
+         <ul>
+            <li v-for="prerequisite in prerequisites">{{prerequisite}}</li>
+         </ul>
+         
+         <button 
+            v-on:click="goToStudentLink" 
+            class="button"
+            v-bind:class="{disabled: !isOpen}"
+            v-bind:disabled="!isOpen">Register Now</button>
+
+            <p v-bind:style="{ fontStyle: fontStyle, fontWeight: fontWeight, color: fontColor }">4 Credits</p>
     </div>
 <!--Include Vue-->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 <!--Create Vue instance-->
-<script>
-var app = new Vue({ 
-    el: '#app', 
-    data: { 
-        courseName: 'CS601: Web Application Development'
-    }
-})
-</script> 
+<script src="main.js"></script> 
 
 
 </body>
