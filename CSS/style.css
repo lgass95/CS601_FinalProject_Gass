@@ -525,6 +525,15 @@ textarea {
     caption {
         font-size: 3vw;
     }
+
+    #textGroup{
+        text-align: center;
+    
+    }
+
+    #myForm {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -631,5 +640,13 @@ textarea {
 
     caption {
         font-size: 3vw;
+    }
+
+    #textGroup{
+        text-align: center;
+    }
+
+    #myForm {
+        text-align: center;
     }
 }
