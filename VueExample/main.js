@@ -3,7 +3,7 @@ let app = new Vue({
     data: { 
         appName: 'My Vue Demonstration',
         link: 'https://www.bu.edu/csmet/academic-programs/courses/cs601/',
-        logoSrc: './Images.Alcatraz_1.jpg',
+        logoSrc: 'VueImages/Sunflowers.jpg',
         offeredOnline: true,
         offeredBlended: true,
         isOpen: true,
