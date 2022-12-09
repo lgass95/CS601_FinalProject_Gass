@@ -1,0 +1,17 @@
+.button {
+    color:#ffffff;
+    padding: 10px 15 px;
+    border: 1px solid transparent;
+    background: #444444;
+}
+
+.disabled {
+    background: #d8d8d8;
+}
+
+img { 
+    display: block;
+    margin: auto;
+    height: 30rem;
+    width: auto;
+}
