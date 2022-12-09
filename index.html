@@ -31,12 +31,26 @@
                 <section>
                 <h2>Hello,</h2>
                 <p>My name is Luke Gass and I am a student at Boston University. This website will serve as a biography 
-                and portfolio to showcase the skills I learn as I dive in to the world of web development. I hope 
+                and portfolio to showcase the skills I learn as I dive in to the world of <em>web development</em>. I hope 
                 you will enjoy the content I publish here and come to learn a little about me as I continue to work on it.
                 </p>
 
-                <p>Here is a random animal video for your amusement:</p>
+                <p><u>Here is a random animal video for your amusement:</u></p>
             <iframe class = "video" src="https://www.youtube.com/embed/TReCLbmhlMs" title="fall short  and  funny animal collection videos"></iframe>
+            </section>
+
+            <section>
+                <br/>
+                <!--Code from https://codepen.io/elliottlan/pen/MNEWNx-->
+                <div id="dogContainer">
+                <h2>Still not satisfied? How about some dog pictures?</h2>
+                <button id ="dogButton" onClick="getRandomImage()">Fetch!</button>
+                
+                    <br />
+                    <br />
+                    <img id="dogImage" 
+                    src="https://dog.ceo/img/dog-api-logo.svg" alt="Picture of Dog">
+                </div>
             </section>
             <!--Article elements are here to demonstrate semantic HTML and will have content 
                     added on some pages when appropriate-->
@@ -46,6 +60,43 @@
             <!--I added a break element before the footer to give it some padding from the rest 
                 of the page above.-->
         <footer>Copyright &copy; 2022 Luke Gass. All Rights Reserved.</footer>
+        <script>
+            
+            document.addEventListener("DOMContentLoaded", function(){
+                let dogs = document.getElementById('dogContainer');
+                dogs.style.display = 'block';
+            });
+            // function to perform a get request
+                function httpGet(theUrl)
+                {
+                    var xmlHttp = new XMLHttpRequest();
+                    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                    xmlHttp.send( null );
+                    return xmlHttp.responseText;
+                }
+
+                // function to get a random image
+                function getRandomImage()
+                {
+                // get the json from the server
+                var json = httpGet('https://dog.ceo/api/breeds/image/random');
+                console.log(json);
+
+                // decode the json into an array
+                var array = JSON.parse(json);
+                console.log(array);
+                
+                // get the image url from the array
+                var url = array.message;
+                console.log(url);
+                
+                // get the image object
+                var image = document.getElementById('dogImage');
+                
+                // set the src of the image object
+                image.src = url;
+                }
+        </script>
         </div>
     </body>
 </html>
