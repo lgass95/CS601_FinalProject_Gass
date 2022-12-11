@@ -1,3 +1,11 @@
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
 .button {
     color:#ffffff;
     padding: 10px 15 px;
@@ -14,4 +22,20 @@ img {
     margin: auto;
     height: 30rem;
     width: auto;
+    border: .5rem solid rgb(227, 167, 16);
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+}
+
+body {
+    background-image: url("VueImages/StarryNight.jpg");
+   
+}
+
+aside {
+    background-color: white;
+    display:inline;
 }

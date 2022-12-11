@@ -6,34 +6,30 @@
     </head> 
 <body> 
 
-    
+    <h1 >Artist Spotlight: Vincent van Gogh</h1>
+    <!--App start-->
     <div id="app">
-        <img :src="logoSrc" alt = "Boston University Logo"/>
-         <h1>{{ appName }}</h1> 
-         <a v-bind:href="link">View Course Details</a>
+        <h2
+        :style="{color: fontColor}">
+        {{dates}}</h2>
+        <img id ="display1" 
+            :src="display1" 
+            @mouseover=hoverOnOne(img2); 
+            @mouseleave=hoverOffOne(img1);><br>
 
-         <p v-if="offeredOnline">Offered on campus and online.</p>
-         <p v-else>Offered online only.</p>
+        <img id="display2"
+            :src="display2"
+            @mouseover=hoverOnTwo(img4);
+            @mouseleave=hoverOffTwo(img3);>
 
-         <h2>Prerequisites</h2>
-         <p>One of the following or Instructor Consent:</p>
-         <ul>
-            <li v-for="prerequisite in prerequisites">{{prerequisite}}</li>
-         </ul>
-         
-         <button 
-            v-on:click="goToStudentLink" 
-            class="button"
-            v-bind:class="{disabled: !isOpen}"
-            v-bind:disabled="!isOpen">Register Now</button>
-
-            <p v-bind:style="{ fontStyle: fontStyle, fontWeight: fontWeight, color: fontColor }">4 Credits</p>
+            <button><a v-bind:href="link" target="_blank">To learn more about the artist, Click Here</a></button>
+          
     </div>
+    <!--App end-->
+
 <!--Include Vue-->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 <!--Create Vue instance-->
 <script src="main.js"></script> 
-
-
 </body>
 </html>

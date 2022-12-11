@@ -144,6 +144,7 @@
         padding: .5rem;
         border: 2px solid black;
         border-radius: 5px;
+        position: relative;
     }
 
     div.blog {
@@ -170,6 +171,12 @@
 
     span#orange {
         background-color: #ffa600;
+    }
+
+    .blogpost footer {
+        position:absolute;
+        bottom: 0;
+        right:0;
     }
 /*|| Gallery*/
 

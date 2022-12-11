@@ -1,27 +1,32 @@
 let app = new Vue({ 
     el: '#app', 
-    data: { 
-        appName: 'My Vue Demonstration',
-        link: 'https://www.bu.edu/csmet/academic-programs/courses/cs601/',
-        logoSrc: 'VueImages/Sunflowers.jpg',
-        offeredOnline: true,
-        offeredBlended: true,
-        isOpen: true,
-        prerequisites: [
-            'CS200',
-            'CS231',
-            'CS232',
-            'CS300'
-        ],
-        
-        fontStyle: 'italic',
-        fontWeight: 'bold',
-        fontColor: '#dc143c'
+    //function to return assets and text to populate page
+    data: function(){ 
+       return{
+        display1: 'VueImages/Sunflowers.jpg',
+        img1: 'VueImages/Sunflowers.jpg',
+        img2: 'VueImages/Irises.jpg',
+        display2: 'VueImages/SP1.jpg',
+        img3: 'VueImages/SP1.jpg',
+        img4: 'VueImages/SP2.jpg',
+        link: "https://en.wikipedia.org/wiki/Vincent_van_Gogh",//link attaches to button to go to new page
+        dates: "1853-1890",
+        fontColor: 'white',
+       };
     },
+    //methods swap the two sets of images
     methods: {
-        goToStudentLink: function() {
-            alert('You will be redirected to Student Link.')
-            window.location.href='https://www.bu.edu/link/bin/uiscgi_studentlink.pl/uismpl/?ModuleName=menu.pl&NewMenu=Home'
+        hoverOnOne(value){
+            this.display1=value;
+        },
+        hoverOffOne(value){
+            this.display1=value;
+        },
+        hoverOnTwo(value){
+            this.display2=value;
+        },
+        hoverOffTwo(value){
+            this.display2=value;
         }
     }
-})
+});
