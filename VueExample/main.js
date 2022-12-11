@@ -1,5 +1,10 @@
+let content = document.getElementById('app');
+content.style.display='block';
+
 let app = new Vue({ 
     el: '#app', 
+
+
     //function to return assets and text to populate page
     data: function(){ 
        return{

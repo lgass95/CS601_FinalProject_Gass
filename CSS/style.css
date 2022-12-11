@@ -137,6 +137,37 @@
         display: flexbox;
     }
 
+    #navbar {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        word-spacing: 1rem;
+        font-size: 1.5vw;    
+        display: none;
+        background-color: black;
+        color: #ffffff;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    a.nav {
+        text-decoration: none;
+        color:#ffffff;
+    }
+
+    a.nav:hover {
+        color: #000000;
+        background-color:#ffffff;
+    }
+
+    span.selected {
+        color: #000000;
+        background-color:#ffffff;
+    }
+    
+    
+
 /*|| Blog*/
     article.blogpost {
         
@@ -202,7 +233,6 @@
         border: 1px solid black;
         margin-left: auto;
         margin-right:auto;
-        /* display:none; */
     }
 
 
@@ -390,6 +420,8 @@ textarea {
         display: none;
     }
 
+
+
     thead {
         border: 2px solid black;
         font-size: 3vw;
@@ -568,6 +600,41 @@ textarea {
         height: 10rem;
         width: auto;
     }
+
+    /*adjust display of navbar to collapse and show menu icon for smaller screen sizes*/
+
+    .nav{
+        display:none;
+    }
+
+    #icon {
+        font-size: 2rem;
+        display: block;
+    }
+
+    .topNav.open a{
+        float: none;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .topNav.open a:active{
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    #navbar {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        word-spacing: 1rem;
+        font-size: 1.5vw;    
+        display: none;
+        background-color: black;
+        color: #ffffff;
+    }
+
+    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -693,4 +760,36 @@ textarea {
         height: 10rem;
         width: auto;
     }
+
+    /*adjust display of navbar to collapse and show menu icon for smaller screen sizes*/
+   .nav{
+        display:none;
+    }
+
+    #icon {
+        font-size: 2rem;
+        display: block;
+    }
+
+    .topNav.open a{
+        float: none;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .topNav.open a:active{
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    #navbar {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        word-spacing: 1rem;
+        font-size: 1.5vw;    
+        display: none;
+        background-color: black;
+        color: #ffffff;
+    }
+    
 }
