@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    align-items: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+div.list {
+    text-align: center;
+}
+
+body {
+    background-image: -webkit-radial-gradient(#ffffff, #eeeeee, #c7c7c7);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: .5rem;
+    background-color: #ffffff;
+    box-shadow: 0rem 0rem .5rem .5rem #4e4e4e;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80%
+
+}
+
+button {
+    margin:.5rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        max-width: 100%;
+        background-image: none;
+    }
+
+    .content {
+        box-shadow: none;
+    }
+}
+
+@media (hover: none) {
+    body{
+        max-width: 100%;
+        background-image: none;
+    }
+
+    .content {
+        box-shadow: none;
+    }
+}

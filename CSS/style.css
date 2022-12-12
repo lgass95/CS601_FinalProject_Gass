@@ -145,6 +145,9 @@
         display: none;
         background-color: black;
         color: #ffffff;
+        width: 100%;
+        
+        
     }
 
     #icon {
