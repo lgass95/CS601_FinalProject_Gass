@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-    
     let words = [];
-   
+    let count = 0;
     while(true){
         let input = prompt ("If you enter a series of words, this program will convert them to an array and sort them alphabetically. Try it out! (Enter \"q\" to finish).");
         let word = /[A-Za-z]/.test(input);
@@ -12,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
         }else{
         words.push(input); 
         console.log(words);
+        count++;
+        console.log(count);
+        document.getElementById("counter").innerHTML = count;
         }
     }
     let sortedWords = words.sort();
