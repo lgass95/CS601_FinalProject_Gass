@@ -111,13 +111,7 @@ function validateForm() {
             console.log("Error: This is not a valid email address.");
             document.getElementById("email").style = "border: 2px solid red";
         }
-    // if(email !== 'Jen' && email !== 'Chris' && email !== 'Christian' && email !== 'Josh' && email !== 'Behdad'){
-    //     isValid = false;
-    //     emailError.innerHTML = "This is not a valid email address.";
-    //     emailValid = false;
-    //     console.log("Error: This is not a valid email address.");
-    //     document.getElementById("email").style = "border: 2px solid red";
-    // }
+    
         else {
             emailError.innerHTML = "";
             document.getElementById("email").style = "border: 1px solid black";

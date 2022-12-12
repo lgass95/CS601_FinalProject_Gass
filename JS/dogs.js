@@ -1,3 +1,4 @@
+//Code from https://codepen.io/elliottlan/pen/MNEWNx
 document.addEventListener("DOMContentLoaded", function(){
     let dogs = document.getElementById('dogContainer');
     dogs.style.display = 'block';

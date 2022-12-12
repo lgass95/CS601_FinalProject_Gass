@@ -1,60 +1,53 @@
-<h1>Luke Gass Portfolio Website - CS 601 Assignment 2</h1>
+<h1>Luke Gass Portfolio Website - CS 601 Final Project</h1>
 
 <h2>Description:</h2>
-    <p>This is a portfolio website I have created for CS 601. This iteration of the site adds CSS styling to the underling HTML structure to improve the overall look of the site.</p>
-    <p>The changes I made to meet the requirements of the assignment are as follows:</p>
-    <ul>
-    <li>I added index markers to make it easier to sort through the sections of the CSS document. Each section is a comment with a pair of straight vertical line '||' markers. To jump to different sections you can use the find command (command f on Mac) and type in those symbols.</li>
-    <li>Heading images were set to same height with automatic width. By using this I was able to remove styling attributes from the HTML document.</li>
-    <li>I set margins for the pages to make content more concentrated at center
-        and the text easier to read.</li>
-    <li>I used sans-serif fonts for the web page presentation to make easier for screen readers.</li>
-    <li>In terms of the media queries, I created three different versions of my pages: a regular one for screens the size of small laptops or smaller, a "mobile" version for touch screens up to the size of large tablets, and a print version.
-        <ul>
-            <li>The laptop and larger version was the standard that I started with. For this I emphasized visuals more and made a point to constrain the area of the content using margins to avoid too much unnecessary white space.</li>
-            <li>For the mobile version, I shrunk down the images and got rid of the margins and made the text relatively larger using vw (viewport width) values to make it more readable. I also centered headings for a better look and enlarged links to make them easier to touch. I also narrowed the gallery and blog post grids and made my example blog post scrollable with the overflow attribute.</li>
-            <li>The print version had similarities to the mobile version, including the centering of content, the removal of margins, the scaling down of images. Some key differences were that the images were scaled down to a greater degree, the sans-serif fonts were replaced with serif fonts for greater readabilty, and interactive elements such as links and videos were removed.</li>
-        </ul>
-    </li>
-    <li>I added div containers to several elements to make them easier to reposition</li>
-    </ul>
-    
+    <p>This is a portfolio website I have created for CS 601. This site utilizes semantic HTML, CSS, and JavaScript to provide an aesthetically pleasing and intereactive experience for users and to demonstrate what I have learned during the semester.</p>
+
+<h2>Design:</h2>
+    <p> I decided to go with a simple, clean design overall, with a content container and background with a monochromatic color scheme. I think this lends to the flexibility of the design and makes it easier to change the layout on the mobile version. I also used text shadows and box shadows to provide some framing/depth. The overall layout is designed to be simple to navigate and make the content of each page prominent. I utilized media queries, flexbox, and CSS grid to make the pages adjust for screen sizes. I found that some of these methods worked better for some elements (for example, the grid layout for a photo gallery and blog posts) and also worked worked well together when combined. These changed the layout for smaller screens by making images smaller and text larger, and got rid of decoration on the margin to emphasize the content.</p>
+
+<h2>Structure and Styling:</h2>
+    <p>I used multiple semantic html elements on all of the main pages of the website. Though not all the elements were utilized on each page, the code contains the tags in order to provide a structure to the page that makes it easy to add to it later on. I also used many div elements as containers for styling purposes using CSS. The CSS that I added improved both the logic of the layout as well as the overall aesthetic of the site.</p>
+
+<h2>Functionality:</h2>
+    <p>I utilized JavaScript on multiple pages in the website. One feature that is on every page is a collapsible navbar at the top of the page. This bar hides the link elements for smaller screen sizes and opens to make it easier to navigate. Another major JS feature on the site is the photo gallery. This page has thumbnails of photos grouped under an "album" and when clicked they open a photo viewer and can be switched between. The photo viewer can be closed by clicking on it. The Contact page has a contact form that is validated using JS. The user is asked to fill out the required fields and is shown error messages when they have not been filled out. The fields validate for name and proper syntax for email addresses (the requirement of an @ symbol as well as a domain name, including a prepending period). The validation is done using a regular expression.</p>
+    <p>The Experience page contains a list of links to portfolio projects that use JS at the bottom. These projects include a calculator, a fetch function that generates a table using JSON data, a tribute page that demonstrates Vue functionality in a single page application, and an array sorter that takes words entered, validates them, and then sorts them alphabetically and provides a word count. All of the features and projects demonstrate methods of changing the styling of pages, validating input from users, displaying alerts and prompts, making asynchronous requests and manipulating the DOM.</p>
+
+<h2>Accessibility</h2>
+    <p>Accessibility was an important consideration in the overall design. For example, I used sans-serif font for the text to make it readable for screen readers, but also used serif font for the printable version. I also made the text sizes adjustable to screen size. I included alt attributes for many of the photos to give detailed descriptions for those who may not be able to see them. Furthermore, there were several elements that used JavaScript that I was sure to compenste for by either hiding them when JS was disabled on the browser or providing alternatives altogether. This can be seen in the navigation, the photo gallery and the contact form on the Contact page, as well as in the apps linked on the Experience page.</p> 
+
+<h2>Extra Features:</h2>
+    <p>As mentioned above, I used media queries, flexbox and CSS grid to make the site responsive to different screen sizes. I also connected to an external API using fetch request on the home page. There were a number of ES6 elements that were utilized in different parts of the website, including let and const variables, template strings, arrow functions, and iterators.</p>
+
+<h2>Features Added After Presentation:</h2>
+    <p>I added a responsive navbar that collapses when the page is shrunk to a specific size. This leaves a clickable menu icon that opens and closes the menu for easier mobile navigation. This is replaced with the original navbar when javascript is turned off in the browser.</p>
+    <p>I also added an array sorting app under Projects on the Experience page. This program takes input from the user, making sure to validate it as real words, puts them into an array, and sorts them alphabetically. Once the user is done inputting, the program displays the sorted list of words to them and provides a word count. If done with the console open, you can see each word and increment logged.</p>
+    <p>Also under the Project section is a tribute page I build using Vue. It displays different vue functions, including changing two images by hovering over them with a mouse, adding a heading, changing the styling through text color and adding a working link to a button. I opted not to use Vue on any of the main pages as I thought it would be better to demonstrate as a single page applicaiotn this way without impacting the simple clean look of the site.</p>
 
 <h2>Challenges:</h2>
-    <ul>
-        <li>One part that I found challenging was making grid layouts for the blog and gallery sections. It took my a bit of time to arrainge everything in a satisfactory way.</li>
-        <li>I found working with media queries extremely difficult. There was a lot of trial and error involved with getting the elements to shift in the ways that I wanted when changing the site's layout to a more mobile-firendly version.</li>
-        <li>
-    </ul>
+    <p>Some of the most difficult challenges I faced while creating this website involved CSS and JavaScript. Using both involved quite a bit of trial and error that would result in distorting pages or breaking programs that took several hours to search for answers in.</p>
+    <p>Another major challenge I ran into was using github. I created multiple branches for my project and at times it would not let me to update the main branch. Ultimately, I had to swap out the main branch for a different one.</p>
+    <p>I had a very difficult time coming up with features for the website on my own. After creating the overall layout, I drew a blank in terms of what content to add in. In order to demonstrate my proficiency with javascript, I opted to add different portfolio examples along with some features to the site itself. I did not want to be overly ambitious with flashy features for the site and wanted to prioritize that it worked correctly first and foremost.</p>
 
-<h2>Extras:</h2>
-<ul>
-    <li>I added a text-shadow attribute to all my h1 elements.</li>
-    <li>I used a color gradient in the margins and box shadow to frame the content to give a stylized appearance without drawing focus. Credit for resources on gradients goes to Colin Ferguson who posted about them in this week's message boards.</li>
-    <li>I styled the links using the link, hover, visited, and active attributes to give them different colors depending on which state they were in.</li>
-    <li>I added a border radius to my bio image to give it a rounded appearance.</li>
-    <li>I added an "Experience" page to keep information about my personal life and professional background separate.</li>
-    <li>I used the span and background-color elements to demonstrate a highlighting feature in my example blog post.</li>
-</ul>
+<h2>*Note on CSS Navigation*</h2>
+    <p>I added index markers to make it easier to sort through the sections of the main CSS document. Each section is a comment with a pair of straight vertical line '||' markers. To jump to different sections you can use the find command (command f on Mac) and type in those symbols.</p>
+   
+    
 
 <h2>References:</h2>
     <ul>
-        <li><a>https://mycolor.space/gradient3</a></li>
-        <li><a>https://www.makeuseof.com/css-flexbox-grid-which/</a></li>
-        <li><a>https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing</a></li>
-        <li><a>https://www.freecodecamp.org/news/how-to-center-an-image-in-css/</a></li>
-        <li><a>https://www.computerhope.com/issues/ch001391.htm</a></li>
-        <li><a>https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns</a></li>
-        <li><a>https://granneman.com/webdev/coding/css/centertables</a></li>
-        <li><a>https://www.w3schools.com/css/css_align.asp</a></li>
-        <li><a>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator</a></li>
-        <li><a>https://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html</a></li>
-        <li><a>https://tutorial.techaltum.com/css_fixed_liquid_layout.html</a></li>
-        <li><a>https://css-tricks.com/a-complete-guide-to-css-media-queries/</a></li>
-        <li><a>https://www.lambdatest.com/blog/css-media-queries-for-responsive-design/</a></li>
-        <li><a>https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries</a></li>
-        <a><li>https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/</a></li>
-        <a><li>https://css-tricks.com/touch-devices-not-judged-size/</a></li>
-        <a><li>https://litmus.com/community/discussions/8146-media-queries-not-working-on-mobile</a></li>
-        <a><li>https://linuxhint.com/change-font-size-media-queries/</a></li>
+        <li><a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">https://www.w3schools.com/howto/howto_js_topnav_responsive.asp</a></li>
+        <li><a href="https://stackoverflow.com/questions/39791995/the-files-ds-store-and-ds-store-had-a-tree-conflict-error-from-git-in-xcode-8">https://stackoverflow.com/questions/39791995/the-files-ds-store-and-ds-store-had-a-tree-conflict-error-from-git-in-xcode-8</a></li>
+        <li><a href="https://www.freecodecamp.org/news/how-to-sort-alphabetically-in-javascript/">https://www.freecodecamp.org/news/how-to-sort-alphabetically-in-javascript/</a></li>
+        <li><a href="https://www.youtube.com/watch?v=BR9sBx3LBHU">https://www.youtube.com/watch?v=BR9sBx3LBHU</a></li>
+        <li><a href="https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/">https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/</a></li>
+        <li><a href="https://stackoverflow.com/questions/18665171/how-to-make-the-main-content-div-fill-height-of-screen-with-css">https://stackoverflow.com/questions/18665171/how-to-make-the-main-content-div-fill-height-of-screen-with-css</a></li>
+        <li><a href="https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element">https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element</a></li>
+        <li><a href="https://glitch.com/edit/#!/cs601-assignment-5?path=README.md%3A1%3A0">https://glitch.com/edit/#!/cs601-assignment-5?path=README.md%3A1%3A0</a></li>
+        <li><a href="https://javascript.info/default-browser-action">https://javascript.info/default-browser-action</a></li>
+        <li><a href="https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javascript/">https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javascript/</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_noscript.asp">https://www.w3schools.com/tags/tag_noscript.asp</a></li>
+        <li><a href="https://validator.w3.org/#validate_by_input">https://validator.w3.org/#validate_by_input</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_input">https://jigsaw.w3.org/css-validator/#validate_by_input</a></li>
+        <li><a
     </ul>

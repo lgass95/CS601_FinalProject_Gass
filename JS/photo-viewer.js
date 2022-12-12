@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
          e.preventDefault();
          let view = document.getElementById('photo-viewer');
         view.style.display = 'block';
-     })
+     });
 }
 
 
@@ -26,5 +26,5 @@ function imgEnlarge(imgs) {
 let view = document.getElementById('photo-viewer');
 view.addEventListener('click', function(){
     view.style.display = 'none';
-})
+});
 
