@@ -49,5 +49,5 @@
         <li><a href="https://www.w3schools.com/tags/tag_noscript.asp">https://www.w3schools.com/tags/tag_noscript.asp</a></li>
         <li><a href="https://validator.w3.org/#validate_by_input">https://validator.w3.org/#validate_by_input</a></li>
         <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_input">https://jigsaw.w3.org/css-validator/#validate_by_input</a></li>
-        <li><a
+        <li><a href="https://jshint.com/">https://jshint.com/</a></li>
     </ul>
