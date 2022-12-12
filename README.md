@@ -1,7 +1,7 @@
 <h1>Luke Gass Portfolio Website - CS 601 Final Project</h1>
 
 <h2>Description:</h2>
-    <p>This is a portfolio website I have created for CS 601. This site utilizes semantic HTML, CSS, and JavaScript to provide an aesthetically pleasing and intereactive experience for users and to demonstrate what I have learned during the semester.</p>
+    <p>This is a portfolio website I have created for CS 601. This site utilizes semantic HTML, CSS, and JavaScript to provide an aesthetically pleasing and intereactive experience for users and to demonstrate what I have learned during the semester. It was tested on Google Chrome, Mozilla Firefox, and Apple Safari.</p>
 
 <h2>Design:</h2>
     <p> I decided to go with a simple, clean design overall, with a content container and background with a monochromatic color scheme. I think this lends to the flexibility of the design and makes it easier to change the layout on the mobile version. I also used text shadows and box shadows to provide some framing/depth. The overall layout is designed to be simple to navigate and make the content of each page prominent. I utilized media queries, flexbox, and CSS grid to make the pages adjust for screen sizes. I found that some of these methods worked better for some elements (for example, the grid layout for a photo gallery and blog posts) and also worked worked well together when combined. These changed the layout for smaller screens by making images smaller and text larger, and got rid of decoration on the margin to emphasize the content.</p>
@@ -31,6 +31,16 @@
 
 <h2>*Note on CSS Navigation*</h2>
     <p>I added index markers to make it easier to sort through the sections of the main CSS document. Each section is a comment with a pair of straight vertical line '||' markers. To jump to different sections you can use the find command (command f on Mac) and type in those symbols.</p>
+
+<h2>Issues:</h2>
+<ul>
+    <li>Validating the main CSS document gives a warning for using the color gradient I utilized in my main background as it is from an outside vendor since I generated it on a website.</li>
+    <li>I ran into an error using developer view on Google Chrome because of a browser extension, but turning my extensions off fixed the issue.</li>
+    <li>When going between pages between toggling the JavaScript on or off in Safari (particilarly with the applications linked on the Experience page), sometimes a no JS message will show when JS is turned on or vice-versa. This can be fixed by toggling JS on/off on that page.</li>
+    <li>There can be issues using the navigation links using touchscreen mode in Chrome devtools. This seemed to resolve itself after giving the browser some time.</li>
+    <li>There was a problem opening the resume PDF link in Chrome devtools. The documentation said it was due to "Quirks Mode" and it not being an HTML document.</li>
+</ul>
+
    
     
 
